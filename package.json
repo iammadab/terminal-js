@@ -1,0 +1,20 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "Declaratively build command line tools with a smile :)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "line",
+    "declartive"
+  ],
+  "author": "Wisdom Ogwu (@iammadab)",
+  "license": "ISC"
+}
