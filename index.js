@@ -2,6 +2,7 @@ const parser = require("./lib/parser")
 
 // parser.use({
 // 	commands: {
+// 		push: ["remote", "login"],
 // 		login: ["-u", "-p"]
 // 	},
 // 	options: {
@@ -9,7 +10,7 @@ const parser = require("./lib/parser")
 // 		password: "-p"
 // 	},
 // 	flags: {
-// 		username: "-u"
+// 		verbose: "-v"
 // 	}
 // })
 
