@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "@iammadab/terminaljs",
   "version": "2.4.0",
   "description": "Declaratively build command line tools with a smile :)",
   "main": "index.js",
