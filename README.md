@@ -1,2 +1,8 @@
 # terminal-js
-Declaratively build command line tools
+Declaratively build nodejs command line tools
+## Installation
+```javascript
+npm install @iammadab/terminaljs
+```
+## Quick Start
+Recreating the 
