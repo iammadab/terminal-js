@@ -94,21 +94,84 @@ Each command has an array as its value, of all the arguments it is expecting and
 
 Terminal js will out of the box validates the user cli inputs, an helpful error message will be printed out when a user puts in an invalid command, or they don't put the complete arguments needed for a specific command.
 
+Terminaljs will process all the arguments and give you back an object with each of your argument names and the values supplied by the user. 
+
 ## Options
 
 Options are command line key value pairs e.g --username "frank"
 They could be long form (--username) or short form (-u)
 
 You declare your options with an option object using terminaljs
-They key for each object entry is the long form and the value is the short form
+The key for each object entry is the long form and the value is the short form
 
 ```
 terminal.use({
   commands: {},
   options: {
-    username: "-u"
+    username: "-u",
+    password: "-p"
   }
 })
 ```
 
-Users of your cli can use 
+Users of your cli can use either the long form or the short form.
+
+Terminal js will process all the options and append to the params object an option object property with all the supplied options and their values.
+
+```
+//Params Object
+{
+  ...commandArgs
+  options: {
+    username: "Frank"
+  }
+}
+```
+
+To make an option required for a specific command just add it to the array for that command
+```
+terminal.use({
+  commands: {
+    login: ["-u", "-p"],
+  },
+  options: {
+    username: "-u",
+    password: "-p"
+   }
+  })
+```
+
+Appropraite error will be sent for any input error
+
+## Flags
+Flags are true or false entities, they don't require an extra value just their presence is enough to change the behaviour
+
+An example from npm (-i, --install) 
+
+For flags add a flag object to the config. Same with options, the key is the long form and the value is the short form
+
+```
+terminal.use({
+  commands: {},
+  flags: {
+    install: "-i"
+  }
+ })
+ ```
+ 
+ Terminaljs will add a flags property to the params telling you which flags have been activated
+ ```
+ //Params
+ {
+  ...commandArgs,
+  flags: {
+    install: true
+  }
+ }
+ ```
+ 
+ Flags can also be made required for a command by adding it to your command argument array
+ 
+ 
+## Coming Up
+An article will be realeased soon showing how to use terminaljs to build a full blown command line tool. Follow on twitter @iammadab to get updated once it comes out. Happy Coding :)
