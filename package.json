@@ -1,6 +1,6 @@
 {
   "name": "@iammadab/terminaljs",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Declaratively build command line tools with a smile :)",
   "main": "index.js",
   "directories": {
@@ -12,8 +12,9 @@
   "keywords": [
     "cli",
     "command",
-    "line",
-    "declartive"
+    "command line",
+    "terminal-js",
+    "terminal"
   ],
   "author": "Wisdom Ogwu (@iammadab)",
   "license": "ISC"
