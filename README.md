@@ -174,4 +174,4 @@ terminal.use({
  
  
 ## Coming Up
-An article will be realeased soon showing how to use terminaljs to build a full blown command line tool. Follow on twitter @iammadab to get updated once it comes out. Happy Coding :)
+An article will be realeased soon showing how to use terminaljs to build a full blown command line tool. Follow on twitter [@iammadab](https://twitter.com/iammadab) to get updated once it comes out. Happy Coding :)
